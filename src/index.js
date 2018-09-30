@@ -1,10 +1,10 @@
 module.exports = function getZerosCount(number, base) {
-    var zero_count = number;
-    var current_base = base;
-    var current_number = number;
-    var number_zero_count = 0;
-    var base_zero_count = 0;
-    for (var i = 2; i <= base; i++) {
+    let zero_count = number;
+    let current_base = base;
+    let current_number = number;
+    let number_zero_count = 0;
+    let base_zero_count = 0;
+    for (let i = 2; i <= base; i++) {
         if (current_base % i === 0) {
             number_zero_count = 0;
             while (current_number / i > 0) {
